@@ -1,0 +1,19 @@
+{
+  "author": "Raul Farias S",
+  "name": "like-me",
+  "description": "Proyecto Global Desafio Like Me",
+  "private": true,
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": {
+    "node": "18.16.0"
+  },
+  "scripts": {
+    "dev": "npm run dev:frontend & npm run dev:backend",
+    "dev:frontend": "npm run dev --prefix ./frontend",
+    "dev:backend": "npm run dev --prefix ./backend",
+    "prepare": "npm run prepare:frontend && npm run prepare:backend",
+    "prepare:frontend": "npm i --prefix ./frontend",
+    "prepare:backend": "npm i --prefix ./backend"
+  }
+}
