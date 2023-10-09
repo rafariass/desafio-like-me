@@ -50,7 +50,7 @@ const App = () => {
           />
         </div>
         <div className='col-12 col-sm-8 px-5 row posts align-items-start'>
-          {posts.map((post) => <Post key={post} post={post} like={like} eliminarPost={eliminarPost} />)}
+          {posts.map((post) => <Post key={post.id} post={post} like={like} eliminarPost={eliminarPost} />)}
         </div>
       </div>
     </div>
